@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="675d67a4-581a-46a3-9895-9e18fa1bf653" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/expense-tracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/fonts/iconsax.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/fonts/iconsax.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/fonts/iconsax.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/fonts/iconsax.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ExpenseItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Css/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ExpenseItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ExpenseItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -61,7 +57,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Assets/fonts/iransans" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -71,10 +68,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\newProjects\expense-tracker\src\Assets\fonts\iransans" />
       <recent name="C:\newProjects\expense-tracker\src\Assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\newProjects\expense-tracker\src\Assets" />
+      <recent name="C:\newProjects\expense-tracker\src\Assets\Css" />
       <recent name="C:\newProjects\expense-tracker\src" />
     </key>
   </component>
@@ -105,5 +104,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.js</url>
+          <line>60</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

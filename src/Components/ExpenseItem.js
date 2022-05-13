@@ -1,6 +1,8 @@
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
 const ExpenseItem = () => {
+    const [t , i18n] = useTranslation();
     return (
         <div className={'expense-tracker-item'}>
             <span className={'expense-tracker-item-title'}>title</span>
