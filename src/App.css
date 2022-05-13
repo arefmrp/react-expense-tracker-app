@@ -1,38 +1,189 @@
+
 .App {
-  text-align: center;
+ width: 100%;
+  background: rgba(232, 56, 203, 0.3);
+  height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.circle{
+ width: 200px;
+ height: 200px;
+ background: rgb(45, 7, 34);
+ position: absolute;
+ top: -85px;
+ right: -80px;
+ border-radius: 50%;
+ opacity: 0.13;
+}
+.expense-tracker-section{
+ width: 300px;
+ height: 700px;
+ background-color: rgba(117, 3, 80, 0.3);
+ border-radius: 10px;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ flex-direction: column;
+ box-sizing: border-box;
+ padding: 10px;
+ overflow: hidden;
+  position: relative;
+ overflow-y: auto;
+
+}
+.expense-tracker-header .h1-one{
+ color: #7503504C;
+}
+.expense-tracker-header .h1-two{
+ color: #fafafa;
+}
+.expense-tracker-header p{
+ color: #f1f1f1;
+ font-size: 14px;
+ font-weight: lighter;
+}
+.expense-tracker-input{
+ background-color: #f1f1f1;
+ width: 100%;
+ padding: 7px;
+ border-radius: 5px;
+
+
+}
+.expense-tracker-input .expense-tracker-input-link{
+ text-decoration: none;
+ color: rgba(117, 3, 80, 0.3);
+}
+.form-input-cs{
+ width: 100% !important;
+ margin: 5px 0;
+}
+.card-body form label{
+ font-size: 13px;
+ color: rgba(0, 0, 0, 0.94);
+}
+.form-check-input{
+ background-color: rgba(117, 3, 80, 0.3) !important;
+}
+.btn-cs{
+ color: #f1f1f1 ;
+ font-weight: bold;
+ font-size: 12px;
+ background-color: rgba(117, 3, 80, 0.3);
+ width: 60px;
+ padding: 5px 7px;
+ border: none;
+ outline: none;
+ border-radius: 5px;
+ margin: 10px 0;
+}
+.expense-tracker-input .expense-tracker-input-link{
+ text-decoration: none;
+ color: rgba(117, 3, 80, 0.3);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.expense-tracker-counts .expense-tracker-counts-link{
+ text-decoration: none;
+ color: rgba(117, 3, 80, 0.3);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
 }
+.expense-tracker-counts{
+ background-color: #f1f1f1;
+ width: 100%;
+ padding: 7px;
+ border-radius: 5px;
+ margin: 5px 0;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
-
-.App-link {
-  color: #61dafb;
+.expense-tracker-input-item{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 5px 0;
+ height: 50px;
+ padding: 2px 5px;
+ border-radius: 3px;
+ box-sizing: border-box;
+ border: 2px solid rgba(117, 3, 80, 0.3);
 }
+.expense-tracker-input-item span{
+ font-size: 14px;
+ color: rgba(89, 3, 44, 0.3);
+ font-weight: 700;
+}
+.expense-tracker-input-item span:nth-child(2){
+ color: rgb(45, 7, 34);
+}
+.expense-tracker-items-box{
+ width: 100%;
+ border-radius: 5px 5px 0 0 ;
+ background-color: #f1f1f1;
+ flex-grow: 1;
+ display: flex;
+ align-items: flex-start;
+ flex-direction: column;
+ overflow-y: auto;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.expense-tracker-items-box-header{
+ width: 100% !important;
+ text-align: center;
+ background-color: rgb(45, 7, 34);
+ color: #f1f1f1;
+ padding: 10px 0;
+ border-radius: 5px 5px 0 0;
+ font-weight: lighter;
+
+}
+.expense-tracker-items-box-body{
+ height: auto;
+ width: 100%;
+ overflow-y: auto;
+}
+.expense-tracker-item{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 2px 0;
+ padding: 3px 7px;
+ height: 45px;
+ border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+.expense-tracker-item-title{
+  font-size: 14px;
+ font-weight: bold;
+ color:rgb(45, 7, 34) ;
+}
+.expense-tracker-item-desc{
+  font-size: 14px;
+ font-weight: lighter;
+ color:rgb(45, 7, 34) ;
+}
+.expense-tracker-item-status{
+  font-size: 14px;
+ font-weight: bold;
+ color: #3d883d;
+}
+.expense-tracker-item-price{
+  font-size: 13px;
+ font-weight: normal;
+ color:rgb(45, 7, 34) ;
+}
+.expense-tracker-item-icon i{
+  font-size: 14px;
+ font-weight: bold;
+ color:rgb(45, 7, 34) ;
 }
