@@ -72,13 +72,13 @@ function App() {
                     <div className={'row'}>
                         <div className={'col-6'}>
                             <div className={'expense-tracker-input-item'}>
-                                <span>Income</span>
+                                <span>{t("income")}</span>
                                 <span>12$</span>
                             </div>
                         </div>
                         <div className={'col-6'}>
                             <div className={'expense-tracker-input-item'}>
-                                <span>Income</span>
+                                <span>{t("expense")}</span>
                                 <span>12$</span>
                             </div>
                         </div>

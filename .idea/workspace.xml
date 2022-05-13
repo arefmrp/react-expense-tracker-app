@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="675d67a4-581a-46a3-9895-9e18fa1bf653" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Css/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/fonts/iconsax.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ExpenseItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ExpenseItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
