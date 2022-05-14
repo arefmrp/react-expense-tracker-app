@@ -7,6 +7,7 @@
  justify-content: center;
  align-items: center;
  position: relative;
+ font-family: vazir;
 }
 
 .circle{
@@ -106,12 +107,14 @@
  margin: 5px 0;
 
 
+
 }
 .expense-tracker-input-item{
  width: 100%;
  display: flex;
- justify-content: space-between;
+ justify-content: center;
  align-items: center;
+ flex-direction: column;
  margin: 5px 0;
  height: 50px;
  padding: 2px 5px;

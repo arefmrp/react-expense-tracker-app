@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.rtl.css'
 import '@popperjs/core'
 import 'bootstrap/dist/js/bootstrap.min'
@@ -7,9 +7,48 @@ import './i18n'
 
 import ExpenseItem from "./Components/ExpenseItem";
 import {useTranslation} from "react-i18next";
+import {connect} from "react-redux";
+import {ADDITEMS,AddItems} from "./Redux/actions/actions";
 
-function App() {
+function App(props) {
   const {t,i18n} = useTranslation();
+   // const {inputTitle,setInputTitle} = useState('');
+   // const {inputDesc,setInputDesc} = useState('');
+   // const {inputPrice,setInputPrice} = useState('');
+    let income=0 , expense , sum , counts;
+
+   let main = 1 ;
+
+
+  const onChangeValue = (num) => {
+   let x = parseInt(num);
+      main  = parseInt(num);
+
+  }
+
+
+  const getDataItem = (e)=>{
+      e.preventDefault();
+      let title = document.getElementById('title').value;
+      let desc = document.getElementById('desc').value;
+      let status = main;
+      let price = document.getElementById('price').value;
+      if (title && desc && status && price){
+          props.addItems({title,desc,status,price:parseInt(price)})
+      }else {
+         alert('empty')
+      }
+
+
+      ///reset inputs ... ///
+      document.getElementById('title').value = '';
+      document.getElementById('desc').value = '';
+      document.getElementById('price').value = '';
+      main = 0
+
+
+  }
+
 
 
   return (
@@ -29,27 +68,35 @@ function App() {
              </div>
              <div className="collapse" id="collapseExample">
                  <div className="card card-body">
-                     <form>
+                     <form onSubmit={(e)=>getDataItem(e)}>
 
                        <label for={'title'}>{t("inputTitle")} :</label>
                        <input className={'form-control '} id={'title'}></input>
                        <label for={'desc'}>{t("inputDesc")} :</label>
-                       <input className={'form-control'} id={'dec'}></input>
+                       <input className={'form-control'} id={'desc'}></input>
+                       <label for={'price'}>{t("inputPrice")} :</label>
+                       <input className={'form-control'} id={'price'}></input>
 
-                         <div className="form-check">
-                             <input className="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1"></input>
+
+
+                         <div id={'status'} className={'status'}>
+                             <div className="form-check">
+                                 <input className="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" onClick={()=>onChangeValue(1)}  checked></input>
                                  <label className="form-check-label" htmlFor="flexRadioDefault1">
                                      {t("income")}
                                  </label>
-                         </div>
-                         <div className="form-check">
-                             <input className="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked></input>
+                             </div>
+                             <div className="form-check">
+                                 <input className="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" onClick={()=>onChangeValue(2)}></input>
                                  <label className="form-check-label" htmlFor="flexRadioDefault2">
                                      {t("expense")}
                                  </label>
+                             </div>
                          </div>
+
+
 
 
 
@@ -73,25 +120,25 @@ function App() {
                         <div className={'col-6'}>
                             <div className={'expense-tracker-input-item'}>
                                 <span>{t("income")}</span>
-                                <span>12$</span>
+                                <span>{income}</span>
                             </div>
                         </div>
                         <div className={'col-6'}>
                             <div className={'expense-tracker-input-item'}>
                                 <span>{t("expense")}</span>
-                                <span>12$</span>
+                                <span>{expense}</span>
                             </div>
                         </div>
                         <div className={'col-6'}>
                             <div className={'expense-tracker-input-item'}>
-                                <span>Income</span>
-                                <span>12$</span>
+                                <span>{t("sum")}</span>
+                                <span>{sum}</span>
                             </div>
                         </div>
                         <div className={'col-6'}>
                             <div className={'expense-tracker-input-item'}>
-                                <span>Income</span>
-                                <span>12$</span>
+                                <span>{t("counts")}</span>
+                                <span>{counts}</span>
                             </div>
                         </div>
 
@@ -102,70 +149,11 @@ function App() {
          <div className={'expense-tracker-items-box'}>
              <div className={'expense-tracker-items-box-header'}>{t('items')}</div>
              <div className={'expense-tracker-items-box-body'}>
-                 <ExpenseItem></ExpenseItem>
 
- <ExpenseItem></ExpenseItem>
 
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
- <ExpenseItem></ExpenseItem>
-
+                 {
+                     props.items.length > 0 ? props.items.map(item=>{return <ExpenseItem id={item.id} title={item.title} desc={item.desc} status={item.status} price={item.price}></ExpenseItem>}):<p>{t("itemsEmpty")}</p>
+                 }
 
              </div>
          </div>
@@ -177,5 +165,17 @@ function App() {
     </div>
   );
 }
+const getStateToProps = (props)=>{
+    return{
+        items:props.items
+    }
 
-export default App;
+}
+const mapStateToProps = (dispatch)=>{
+    return{
+        addItems:(val)=>dispatch(AddItems(val))
+    }
+
+}
+
+export default connect(getStateToProps,mapStateToProps)(App);

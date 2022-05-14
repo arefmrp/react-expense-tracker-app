@@ -19,9 +19,17 @@ i18n
                     items:"items",
                     income:"income",
                     expense:"expense",
+                    sum:"sum",
+                    counts:"counts",
                     inputTitle:"title",
-                    inputDesc:"Description",
-                    submit:"submit"
+                    inputDesc:"description",
+                    inputPrice:"price",
+                    submit:"submit",
+                    itemTitle:"title",
+                    itemDesc:"desc",
+                    itemStatus:"status",
+                    itemPrice:"price",
+                    itemsEmpty:"no items for show ...."
                 }
             },
             fa: {
@@ -34,9 +42,17 @@ i18n
                     items:"آیتم ها ",
                     income:"درآمد",
                     expense:"هزینه",
+                    sum:"کل",
+                    counts:"تعداد",
                     inputTitle:"عنوان",
                     inputDesc:"توضیحات",
-                    submit:"ثبت"
+                    inputPrice:"رقم",
+                    submit:"ثبت",
+                    itemTitle:"هنوان",
+                    itemDesc:"توضیحات",
+                    itemStatus:"وضعیت",
+                    itemPrice:"قیمت",
+                    itemsEmpty:"آیتمی برای مشاهده وجود ندارد ..."
 
                 }
             }
